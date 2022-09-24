@@ -11,9 +11,9 @@ function Option(props) {
 
 			{props.result && (
 				<>
-					<span className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px] -z-20"></span>
-					<span className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px] -z-20"></span>
-					<span className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px] -z-20"></span>
+					<span className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px] z-0"></span>
+					<span className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px] z-0"></span>
+					<span className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px] z-0"></span>
 				</>
 			)}
 
