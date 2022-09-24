@@ -15,12 +15,12 @@ function Rules() {
 							RULES
 						</h1>
 						<img src={rules} alt="rules" className="pb-16 md:scale-[1.2]" />
-						<span
+						<div
 							onClick={closeHandler}
 							className="right-10 md:-order-1 md:absolute"
 						>
 							<img src={close} alt="btn-close" className="md:scale-[1.2]" />
-						</span>
+						</div>
 					</div>
 				</div>
 			)}

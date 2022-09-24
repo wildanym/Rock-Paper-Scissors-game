@@ -17,7 +17,7 @@ function Option(props) {
 			)}
 
 			<div className="relative items-center justify-center w-[6.5rem] h-[6.5rem] overflow-hidden bg-white rounded-full felx ">
-				<span className="absolute h-[6.5rem] border-black opacity-25 border-t-[6px] rounded-full w-[6.5rem]"></span>
+				<div className="absolute h-[6.5rem] border-black opacity-25 border-t-[6px] rounded-full w-[6.5rem]"></div>
 				<img
 					className={`absolute scale-[.9] left-6 ${props.top}`}
 					src={props.img}

@@ -41,29 +41,29 @@ function PlayArea(props) {
 			{!isShow ? (
 				<div className="relative flex flex-col gap-2 md:mt-28 md:pt-10 min-w-[296px] mb-24 md:scale-[2]">
 					<div className="relative z-10 flex items-center justify-between bg-transparent ">
-						<span
+						<div
 							onClick={() => {
 								playing("scissors");
 							}}
 						>
 							<Option class="scissors-bg" img={scissors} top="top-5" />
-						</span>
-						<span
+						</div>
+						<div
 							onClick={() => {
 								playing("paper");
 							}}
 						>
 							<Option class="paper-bg" img={paper} top="top-5" />
-						</span>
+						</div>
 					</div>
 					<div className="relative z-10 flex items-center justify-center ">
-						<span
+						<div
 							onClick={() => {
 								playing("rock");
 							}}
 						>
 							<Option class="rock-bg" img={rock} top="top-7" />
-						</span>
+						</div>
 					</div>
 					<img
 						src={triangle}
