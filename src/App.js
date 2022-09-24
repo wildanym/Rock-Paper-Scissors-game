@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./index.css";
+import Header from "./components/Header";
+import PlayArea from "./components/PlayArea";
+import Rules from "./components/Rules";
+import { useState } from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [count, setCount] = useState(0);
+	function getData(data) {
+		setCount(count + data);
+	}
+	return (
+		<div className="relative flex flex-col items-center justify-between gap-16 p-8 sm:h-full md:h-screen bgColor">
+			<Header count={count} />
+			<PlayArea setCount={getData} />
+			<Rules />
+		</div>
+	);
 }
 
 export default App;
