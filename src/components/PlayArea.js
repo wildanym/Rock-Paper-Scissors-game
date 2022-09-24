@@ -74,7 +74,11 @@ function PlayArea(props) {
 			) : (
 				<div className="flex flex-col gap-20 md:relative ">
 					<div className="flex gap-7 md:scale-[2] md:gap-44">
-						<div className="relative z-10 flex flex-col items-center gap-4">
+						<div
+							className={`relative ${
+								result === "YOU WIN" ? "z-10" : "z-20"
+							} flex flex-col items-center gap-4`}
+						>
 							{player === "scissors" && (
 								<Option
 									result={result === "YOU WIN" ? true : false}
@@ -103,7 +107,11 @@ function PlayArea(props) {
 								YOU PICKED
 							</p>
 						</div>
-						<div className="relative z-10 flex flex-col items-center gap-4">
+						<div
+							className={`relative ${
+								result === "YOU LOSE" ? "z-10" : "z-20"
+							} flex flex-col items-center gap-4`}
+						>
 							{house === "scissors" && (
 								<Option
 									result={result === "YOU LOSE" ? true : false}

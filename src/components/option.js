@@ -10,9 +10,9 @@ function Option(props) {
 			></div>
 			{props.result && (
 				<>
-					<div className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px] -z-20"></div>
-					<div className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px] -z-20"></div>
-					<div className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px] -z-20"></div>
+					<div className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px]"></div>
+					<div className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px]"></div>
+					<div className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px]"></div>
 				</>
 			)}
 
