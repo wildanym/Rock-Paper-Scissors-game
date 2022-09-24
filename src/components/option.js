@@ -3,17 +3,16 @@ import "../index.css";
 function Option(props) {
 	return (
 		<div
-			className={`relative flex items-center justify-center rounded-full w-[135px] h-[135px]  z-60  ${props.class}`}
+			className={`relative flex items-center justify-center rounded-full w-[135px] h-[135px] ${props.class}`}
 		>
-			<span
+			<div
 				className={`absolute h-[140px] ${props.class} brightness-50 -z-10 -bottom-[0.34rem] rounded-full w-[135px]`}
-			></span>
-
+			></div>
 			{props.result && (
 				<>
-					<span className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px] z-0"></span>
-					<span className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px] z-0"></span>
-					<span className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px] z-0"></span>
+					<div className="absolute h-[165px] bg-white opacity-[0.03] rounded-full w-[165px] -z-20"></div>
+					<div className="absolute h-[220px] bg-white opacity-[0.03] rounded-full w-[220px] -z-20"></div>
+					<div className="absolute h-[280px] bg-white opacity-[0.02] rounded-full w-[280px] -z-20"></div>
 				</>
 			)}
 

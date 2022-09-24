@@ -40,7 +40,7 @@ function PlayArea(props) {
 		<>
 			{!isShow ? (
 				<div className="relative flex flex-col gap-2 md:mt-28 md:pt-10 min-w-[296px] mb-24 md:scale-[2]">
-					<div className="relative z-10 flex items-center justify-between ">
+					<div className="relative z-10 flex items-center justify-between bg-transparent ">
 						<span
 							onClick={() => {
 								playing("scissors");
@@ -65,12 +65,16 @@ function PlayArea(props) {
 							<Option class="rock-bg" img={rock} top="top-7" />
 						</span>
 					</div>
-					<img src={triangle} alt="triangle" className="absolute scale-[.7]" />
+					<img
+						src={triangle}
+						alt="triangle"
+						className="absolute z-0 scale-[.7]"
+					/>
 				</div>
 			) : (
 				<div className="flex flex-col gap-20 md:relative ">
 					<div className="flex gap-7 md:scale-[2] md:gap-44">
-						<div className="flex flex-col items-center gap-4">
+						<div className="relative z-10 flex flex-col items-center gap-4">
 							{player === "scissors" && (
 								<Option
 									result={result === "YOU WIN" ? true : false}
@@ -99,7 +103,7 @@ function PlayArea(props) {
 								YOU PICKED
 							</p>
 						</div>
-						<div className="flex flex-col items-center gap-4">
+						<div className="relative z-10 flex flex-col items-center gap-4">
 							{house === "scissors" && (
 								<Option
 									result={result === "YOU LOSE" ? true : false}
