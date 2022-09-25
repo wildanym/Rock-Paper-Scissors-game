@@ -39,21 +39,33 @@ function PlayArea(props) {
 	return (
 		<>
 			{!isShow ? (
-				<div className="relative flex flex-col gap-2 md:mt-28 md:pt-10 min-w-[296px] mb-24 md:scale-[2]">
+				<div className="relative flex flex-col gap-2 md:mt-28 md:pt-10 min-w-[296px] mb-24 md:scale-[1.7]">
 					<div className="relative z-10 flex items-center justify-between bg-transparent ">
 						<div
 							onClick={() => {
 								playing("scissors");
 							}}
+							className="transition-all hover:scale-105"
 						>
-							<Option class="scissors-bg" img={scissors} top="top-5" />
+							<Option
+								clickable={true}
+								class="scissors-bg"
+								img={scissors}
+								top="top-5"
+							/>
 						</div>
 						<div
 							onClick={() => {
 								playing("paper");
 							}}
+							className="transition-all hover:scale-105"
 						>
-							<Option class="paper-bg" img={paper} top="top-5" />
+							<Option
+								clickable={true}
+								class="paper-bg"
+								img={paper}
+								top="top-5"
+							/>
 						</div>
 					</div>
 					<div className="relative z-10 flex items-center justify-center ">
@@ -61,8 +73,9 @@ function PlayArea(props) {
 							onClick={() => {
 								playing("rock");
 							}}
+							className="transition-all hover:scale-105"
 						>
-							<Option class="rock-bg" img={rock} top="top-7" />
+							<Option clickable={true} class="rock-bg" img={rock} top="top-7" />
 						</div>
 					</div>
 					<img
